@@ -49,6 +49,8 @@ async def lower_text(text:str):
     while i < len(text):
         if text[i].isupper():
             result += text[i].lower()
+        else:
+            result +=text[i]
         i += 1
     print(f"Answer for Question 4:{result}")
 asyncio.run(lower_text("SALOM PYTHON"))
